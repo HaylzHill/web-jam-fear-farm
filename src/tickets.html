@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fear Farm Haunted Attractions</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <header class="nav-header">
+      <div class="nav-wrapper">
+        <div class="logo-wrapper">
+          <a href="/">
+            <img src="img/haunted-house.svg" alt="Logo" />
+          </a>
+          Fear Farm
+        </div>
+        <button id="nav-button" class="nav-button" aria-label="Toggle menu">
+          <span></span>
+        </button>
+      </div>
+
+      <ul id="nav-links" class="nav-links">
+        <li class="nav-item">
+          <a href="index.html"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a href="attractions.html"> Attractions </a>
+        </li>
+        <li class="nav-item">
+          <a href="tickets.html"> Tickets </a>
+        </li>
+      </ul>
+    </header>
+    <div class="main-container">
+      <div class="tickets-content-wrapper content-wrapper">
+        <div class="section-wrapper">
+          <h1>Tickets</h1>
+          <p>
+            Come experience the Haunt House and Corn Maze. Each night features
+            our world class actors, top of the line props and many surprises.
+          </p>
+          <p>
+            Fear Farm is open from 6pm to 12pm Fridays & Saturdays, Sundays.
+            Attraction is open weather and field conditions permitting.
+          </p>
+          <p>
+            All tickets are time slotted in 1 hour increments. Please arrive
+            onsite & enter the queue line during your time slot. Reserve your
+            slot online to guarantee your reservation.
+            <b>Payment will be taken on admission.</b>
+          </p>
+          <div class="pricing-info-wrapper">
+            <h2>Pricing</h2>
+            <p>Friday admission: $10</p>
+            <p>Weekend admission: $15</p>
+          </div>
+        </div>
+        <div class="section-wrapper">
+          <div class="calendar">
+            <div class="calendar-header">
+              <h1>October 2020</h1>
+            </div>
+            <div class="calendar-weekdays">
+              <div>Su</div>
+              <div>Mo</div>
+              <div>Tu</div>
+              <div>We</div>
+              <div>Th</div>
+              <div>Fr</div>
+              <div>Sa</div>
+            </div>
+            <div id="calendar-content" class="calendar-content"></div>
+            <div class="calendar-key-container">
+              <div class="calendar-key">
+                <div
+                  class="calendar-day-highlight-past calendar-key-style"
+                ></div>
+                <p class="calendar-key-text">- Open but no longer available</p>
+              </div>
+              <div class="calendar-key">
+                <div class="calendar-day-highlight calendar-key-style"></div>
+                <p class="calendar-key-text">- Open and available</p>
+              </div>
+              <div class="calendar-key">
+                <div class="calendar-day-selected calendar-key-style"></div>
+                <p class="calendar-key-text">- Selected</p>
+              </div>
+            </div>
+          </div>
+          <form class="ticket-reservation-form">
+            <div>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.."
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email address.."
+                required
+              />
+            </div>
+
+            <div>
+              <label for="time-slot">Time slot:</label>
+              <select id="time-slot" name="time-slot" required>
+                <option value="6">6pm - 7pm</option>
+                <option value="7">7pm - 8pm</option>
+                <option value="8">8pm - 9pm</option>
+                <option value="9">9pm - 10pm</option>
+                <option value="10">10pm - 11pm</option>
+                <option value="11">11pm - 12pm</option>
+              </select>
+            </div>
+
+            <input class="submit-button" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="logo-wrapper">
+        <a href="/">
+          <img src="img/haunted-house.svg" alt="Logo" />
+        </a>
+        Fear Farm
+      </div>
+      <p>
+        This is a fictional website made for the
+        <a href="http://www.thecodecavern.com" target="_blank">Code Cavern</a>
+        October web jam.
+      </p>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

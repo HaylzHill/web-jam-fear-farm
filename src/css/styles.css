@@ -1,14 +1,19 @@
 body {
   margin: 0;
-  background-color: #1a1a1d;
+  background-color: #0a090e;
   color: #fff;
+  font-family: "Open Sans";
+}
+
+a {
+  color: #f22a5f;
 }
 
 .nav-header {
   display: flex;
   align-items: center;
   height: 100px;
-  background-color: #1a1a1d;
+  background-color: #0a090e;
   color: #fff;
 }
 
@@ -100,6 +105,7 @@ body {
   align-items: center;
   margin-left: auto;
   list-style: none;
+  margin: 0;
 }
 
 .nav-item {
@@ -136,6 +142,307 @@ body {
   transform: scaleX(1);
 }
 
+.main-container {
+  padding: 25px 75px;
+  background-image: url("../img/grunge-background.jpg");
+  background-position: center;
+}
+
+.content-wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.section-wrapper {
+  margin-bottom: 65px;
+}
+
+.section-wrapper > h1 {
+  border-bottom: 2px solid #c3073f;
+  width: fit-content;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans";
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url("../img/hero-background.jpg");
+  text-align: center;
+}
+
+.hero-container > h1 {
+  color: #c3073f;
+  font-size: 45px;
+  font-family: "Open Sans";
+  margin: 0;
+  text-shadow: 0 0 6px #6f2332;
+  text-transform: uppercase;
+}
+
+.hero-container > p {
+  margin: 5px auto 35px;
+  font-weight: 700;
+}
+
+.hero-container > a {
+  background: #c3073f;
+  border: solid 2px #950740;
+  padding: 5px 17px;
+  border-radius: 7px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Amatic SC";
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-container > a:hover {
+  box-shadow: 0 0 18px #950740;
+}
+
+.attractions-section-overview h2,
+.attractions-section-detailed h2 {
+  margin: 0 10px 0 0;
+}
+
+.attractions-section-overview > p {
+  margin-bottom: 5px;
+}
+.attractions-section-spotlight {
+  display: flex;
+}
+
+.attractions-section-spotlight > div {
+  flex-basis: 50%;
+}
+
+.attractions-section-spotlight img {
+  width: 90%;
+  margin-top: 10px;
+}
+
+.attractions-section-info {
+  max-width: 1020px;
+  margin: 5px 0;
+}
+
+.attractions-section-info > .header-container {
+  margin-top: 40px;
+}
+
+.header-container {
+  display: flex;
+}
+
+.new-tag {
+  background: linear-gradient(to right, #c3073f, #47111b);
+  border-radius: 12px;
+  padding: 4px 6px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: auto 0;
+  height: fit-content;
+  font-weight: 700;
+}
+
+.tickets-content-wrapper {
+  display: flex;
+}
+
+.tickets-content-wrapper > div:first-of-type {
+  flex-basis: 40%;
+}
+
+.tickets-content-wrapper > div:last-of-type {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-info-wrapper {
+  margin: 40px 0;
+}
+
+.pricing-info-wrapper > p {
+  margin: 5px 0;
+}
+
+.calendar {
+  width: 320px;
+  background: #0a090e;
+  border-radius: 12px;
+}
+
+.calendar-header {
+  width: 100%;
+  height: 37px;
+  text-align: center;
+  background-color: #950740;
+  padding: 10px 0;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.calendar-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.calendar-weekdays,
+.calendar-content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 5px 0;
+}
+.calendar-weekdays > div {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.calendar-day {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  border: 2px solid transparent;
+  margin: 2px;
+  background: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.calendar-day-not-current {
+  color: #85858a;
+}
+
+.calendar-day-today {
+  color: #950740;
+  font-weight: 700;
+}
+
+.calendar-day-today::before {
+  content: "";
+  width: 20px;
+  background-color: #ffffff;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 15px;
+  font-weight: 100;
+}
+
+.calendar-day-highlight {
+  border-radius: 8px;
+  border: 2px solid #950740;
+  cursor: pointer;
+  transition: background-color 0.5s ease-out;
+}
+
+.calendar-day-highlight:hover,
+.calendar-day-selected {
+  background: #950740;
+  border: 2px solid #950740;
+}
+
+.calendar-day-highlight-past {
+  border-radius: 8px;
+  border: 2px solid #85858a;
+}
+
+.calendar-key-container {
+  margin: 10px auto 0;
+  width: fit-content;
+}
+
+.calendar-key {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-key-style {
+  height: 20px;
+  width: 25px;
+  border-radius: 8px;
+}
+
+.calendar-key-text {
+  margin: 5px;
+  font-size: 12px;
+}
+
+.ticket-reservation-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.ticket-reservation-form > div {
+  display: flex;
+  padding: 5px 0;
+}
+
+.ticket-reservation-form label {
+  width: 75px;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.ticket-reservation-form input:not([type="submit"]),
+.ticket-reservation-form select {
+  margin-left: 10px;
+  flex-grow: 1;
+  border-radius: 4px;
+  border: none;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.submit-button {
+  background: #c3073f;
+  border: solid 2px #950740;
+  padding: 5px 17px;
+  border-radius: 7px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Amatic SC";
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.submit-button:hover {
+  box-shadow: 0 0 18px #950740;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer > p {
+  color: #85858a;
+}
+
 @media only screen and (min-width: 768px) {
   .nav-button {
     display: none;
@@ -149,17 +456,42 @@ body {
     width: 100%;
     padding: 0;
     z-index: 1;
-    transform: scaleY(0);
     transform-origin: top;
-    transition: all 0.3s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
   }
 
   .nav-links-active {
-    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+    height: auto;
   }
 
   .nav-header {
     flex-direction: column;
     overflow: visible;
+  }
+
+  .main-container {
+    padding: 25px;
+  }
+
+  .tickets-content-wrapper {
+    flex-direction: column;
+  }
+
+  .attractions-section-spotlight {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .calendar,
+  .ticket-reservation-form {
+    width: 250px;
+  }
+  .calendar-day {
+    width: 30px;
   }
 }
