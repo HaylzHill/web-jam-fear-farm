@@ -496,30 +496,6 @@ a {
   }
 }
 
-.wrapper {
-  max-width: 60em;
-  margin: 1em auto;
-  position: relative;
-}
-
-input {
-  display: none;
-}
-
-.inner {
-  width: 100%;
-  line-height: 0;
-}
-
-article {
-  width: 20%;
-  float: left;
-  position: relative;
-}
-article > img {
-  width: 100%;
-}
-
 .gallery-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
